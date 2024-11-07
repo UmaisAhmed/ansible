@@ -1,2 +1,1 @@
- first file to practice git
-adding another line
+ Modifying this file for our practice purposes. 

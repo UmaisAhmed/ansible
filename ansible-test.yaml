@@ -1,0 +1,13 @@
+---
+- name: Ansible for Testing
+  hosts: [ubuntu]
+  gather_facts: no
+  vars: 
+    src_path: /home/umais/ansible/test.txt
+    dest_path: /home/umais/FromAnsible
+  tasks:
+    - name: Copy file to target machine
+      copy:
+        src: "{{ src_path }}"
+        dest: "{{ dest_path }}"
+      register: copied_content
